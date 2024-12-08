@@ -321,3 +321,152 @@ Example: Compare-Object -ReferenceObject (1, 2, 3) -DifferenceObject (2, 3, 4)
 
 ![image](https://github.com/user-attachments/assets/8bc79d74-becc-4e0c-a417-cc34bf5aebd0)
 
+
+
+
+
+
+Assignments-
+
+Assignment 1 Cmdlets: 
+
+-$PSVersionTable 
+
+-Write-Host "Hello World!" 
+
+-Get-Service | Where-Object {$_.status –eq "stopped"} 
+
+-$host.version 
+
+-Get-History
+
+-Write-Output 
+
+learned how to use PowerShell commands to monitor command historical events, filter stopped services, verify host version, investigate PowerShell version information, and the results of commands.
+
+Assignment 2 Cmdlets:
+
+-Get help Set-ExecutionPolicy
+
+-Get help Export-Csvsele
+
+-Get help Select-Object
+
+-Get help Get-Process
+
+-Get help Get-EventLog
+
+-Get help Get-Content
+
+Acquired the syntax, application, and specifics of a variety of PowerShell instructions for execution policies, data exporting, object selection, process management, event logging, and content retrieval by using the `Get-Help` cmdlet.
+
+Assignment 3 Cmdlets : 
+
+Get-Process | Export-CSV processes.csv
+
+Get-Process | Export-CSV processes.csv | Out-File Output.txt
+
+Get-Service | Export-CSV serv.csv PS C:\> Get-Service | ConvertTo-CSV
+
+Get-Service | ConvertTo-CSV | Out-File serv.csv
+
+gained the ability to export and transform PowerShell command output, including processes and services, into text and CSV files for distributing and conserving data.
+
+Assignment 4 Cmdlets:
+
+Get-ADComputer   –Filter   *   |   Get-Service   –Name   *
+
+Get-ADComputer   –Filter   *   |   Select-Object   –Property   @{n='ComputerName';e={$_.Name}}   | Get-Service   –Name   *
+
+Get-ADComputer   –Filter   *   |   Select-Object   –Property   @{n='ComputerName';e={$_.Name}}   | Get-WmiObject   –Class   Win32_BIOS   
+
+Get-WmiObject   –Class   Win32_BIOS   –ComputerName   (Get-Content   Computers.txt)   
+
+Get-Process  –Name  *  -ComputerName  (Get-ADComputer  –Filter   *   |                                                                            select-Object   –Expand   Name)   
+
+gained knowledge of how to use PowerShell pipelines and WMI searches to remotely access services, BIOS data, and Active Directory machine properties.
+
+Assignment 5 Cmdlets:
+
+Get-EventLog –LogName Security –Newest 100
+
+$Cred = Get-Credential
+
+Invoke-Command -ComputerName tutu -Credential $cred -ScriptBlockp {Get-EventLog -LogName Security -Newest 100
+}
+
+$remote = New-PSSession -ComputerName tutu -Credential $cred
+
+Get-Module -ListAvailable -PSSession $remote
+
+Get-Module
+
+learned how to create PowerShell sessions, get security event logs, handle modules in both local and remote contexts, and utilize credentials to execute commands remotely.
+
+Assignment 6 Cmdlets: 
+
+(Get-CimClass -ClassName Win32_NetworkAdapterConfiguration).CimClassMethods
+
+Get-CimClass -Namespace root/CIMV2 -ClassName *Registration*
+
+Get-CimInstance -ClassName Win32_NetworkAdapterConfiguration | Where-Object {$_.DHCPEnabled -eq $true}
+
+Win32_QuickFixEngineering
+
+discovered how to use PowerShell's CIM cmdlets to acquire systems patch data, filter network adapter settings, and query CIM classes and implementations.
+
+Assignment 7 Cmdlets:
+
+Get-Variable
+
+Remove-Variable -name x
+
+Write-Output $message
+
+learned the procedures for get, remove, and output parameters in order to handle PowerShell variables.
+
+Assignment 8 Cmdlets:
+
+Commands:
+
+1.	for - Iterates over a specified range.
+
+2.	while - Executes a block of code while a condition is true.
+
+3.	Write-Host - Outputs text to the console.
+
+4.	Read-Host - Reads user input.
+
+5.	-match - Compares a string against a regex pattern.
+
+6.	-and - Logical AND operator for conditional checks.
+
+7.	Out-File - Outputs data to a file.
+
+gained knowledge of PowerShell programming, including how to utilize arrays, loops, conditional operators, text matching, user input, and file output.
+
+Assignment 9 Cmdlets:
+
+Get-Service
+
+where-object
+
+$Action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-File C:\FILENAME"
+
+$Trigger = New-ScheduledTaskTrigger -AtLogon
+
+Register-ScheduledTask -Action $Action -Trigger $Trigger -TaskName "Show Running Services on Login" -Description "Displays all running services at login"
+
+gained knowledge how to construct scheduled task actions and triggers, filter objects, list services, and register tasks in order to automate the execution of PowerShell scripts upon user login.
+
+Assignment 10 Cmdlets:
+
+New-SmbShare -Name "MESSI" -Path "C:\MESSI" -FullAccess "Everyone"
+
+New-Item -Path "c:\MESSI" -ItemType Directory
+
+Get-SmbShare | Where-Object Name -eq "MESSI"
+
+New-PSDrive -Name "S" -PSProvider FileSystem -Root \\192.168.176.128\\MESSI
+
+learned how to use PowerShell to map networks drives, filter shared data, establish and manage SMB file shares, and then set up folders.
