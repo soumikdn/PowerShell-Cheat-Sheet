@@ -325,7 +325,7 @@ Example: Compare-Object -ReferenceObject (1, 2, 3) -DifferenceObject (2, 3, 4)
 
 
 
-Assignments-
+ClassWork/Assignments-
 
 Assignment 1 Cmdlets: 
 
