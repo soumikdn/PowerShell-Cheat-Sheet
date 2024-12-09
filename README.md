@@ -187,7 +187,7 @@ aspects.
 
 Syntax: Measure-Object [-Property] <String> [-Average] [-Sum] [-Maximum] [-Minimum]  
 
-Example: Get-ChildItem "C:\Scripts" | Measure-Object
+Example: Get-ChildItem "C:\TestFolder" | Measure-Object
 
 ![image](https://github.com/user-attachments/assets/28c5b35d-4267-4c05-85f5-602776859a2a)
 
