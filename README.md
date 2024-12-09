@@ -88,7 +88,7 @@ Description: restarts the machine, either locally or remotely.
 
 Syntax: Restart-Computer [-ComputerName] <String[]>  
 
-Example: Restart-Computer -ComputerName Server01
+Example: Restart-Computer -ComputerName SRV1
 
 ![image](https://github.com/user-attachments/assets/171e719c-c3a3-4ea4-a9d4-55e602909566)
 
