@@ -1,8 +1,6 @@
 # PowerShell-Cheat-Sheet
 
-This is the PowerShell cheat sheet with PowerShell commands based on what I learned during the course.
-
-This PowerShell cheat sheet includes the command name, description, syntax, and example for each command.
+This is the PowerShell cheat sheet with PowerShell commands based on what I learned during the course. This PowerShell cheat sheet includes the command name, description, syntax, and example for each command.
 
 1. Get-Process
 
