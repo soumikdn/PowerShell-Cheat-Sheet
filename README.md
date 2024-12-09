@@ -148,7 +148,7 @@ Description: lists each file and folder in a given location.
 
 Syntax: Get-ChildItem [-Path] <String>  
 
-Example: Get-ChildItem -Path "C:\Scripts"
+Example: Get-ChildItem -Path "C:\TestFolder"
 
 ![image](https://github.com/user-attachments/assets/4c7a66d0-4c36-4cb3-87ef-5c61101043d4)
 
