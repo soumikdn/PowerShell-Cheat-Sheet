@@ -237,7 +237,7 @@ Description: filters items according to predetermined criteria.
 
 Syntax: Where-Object [-FilterScript] <ScriptBlock>  
 
-Example: Get-Process | Where-Object {$_.CPU -gt 100}
+Example: Get-Process | Where-Object {$_.CPU -gt 10}
 
 ![image](https://github.com/user-attachments/assets/2f0127dd-0b2a-4496-9605-680864e95cfd)
 
@@ -247,7 +247,7 @@ Description: creates a new cmdlet or command alias.
 
 Syntax: New-Alias [-Name] <String> [-Value] <String>  
 
-Example: New-Alias -Name ls -Value Get-ChildItem
+Example: New-Alias -Name TestFolder2 -Value Get-ChildItem
 
 ![image](https://github.com/user-attachments/assets/b2e59018-ccf5-4311-9670-2e413b8d60d8)
 
