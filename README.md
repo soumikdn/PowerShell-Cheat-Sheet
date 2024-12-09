@@ -257,7 +257,7 @@ Description: returns a list of every alias that has been defined.
 
 Syntax: Get-Alias [-Name] <String[]>  
 
-Example: Get-Alias -Name TestFolder
+Example: Get-Alias -Name TestFolder2
 
 ![image](https://github.com/user-attachments/assets/2223c9d4-4d88-4c24-a5e6-a115c9a91982)
 
