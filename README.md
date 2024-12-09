@@ -158,7 +158,7 @@ Description: copies folders or files to a different place.
 
 Syntax: Copy-Item [-Path] <String> [-Destination] <String>  
 
-Example: Copy-Item -Path "C:\example.txt" -Destination "C:\Backup"
+Example: Copy-Item -Path "C:\TestFolder" -Destination "C:\TestFolder2"
 
 ![image](https://github.com/user-attachments/assets/70499e28-121c-4804-8c2a-153946c2428b)
 
@@ -168,7 +168,7 @@ Description: Transfers folders or files to a new location
 
 Syntax: Move-Item [-Path] <String> [-Destination] <String>  
 
-Example: Move-Item -Path "C:\example.txt" -Destination "C:\Archive"
+Example: Move-Item -Path "C:\TestFolder" -Destination "C:\TestFolder2"
 
 ![image](https://github.com/user-attachments/assets/8eb4d2e1-8d1d-4cc1-a9a7-8f55fdace5b1)
 
