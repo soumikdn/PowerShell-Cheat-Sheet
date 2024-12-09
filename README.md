@@ -298,7 +298,7 @@ Description: modifies the working directory in use.
 
 Syntax: Set-Location [-Path] <String>  
 
-Example: Set-Location -Path "C:\Scripts"
+Example: Set-Location -Path "C:\TestFolder2"
 
 ![image](https://github.com/user-attachments/assets/077e0999-96f4-4f5d-96f3-a4c5d074730b)
 
