@@ -257,7 +257,7 @@ Description: returns a list of every alias that has been defined.
 
 Syntax: Get-Alias [-Name] <String[]>  
 
-Example: Get-Alias -Name ls
+Example: Get-Alias -Name TestFolder
 
 ![image](https://github.com/user-attachments/assets/2223c9d4-4d88-4c24-a5e6-a115c9a91982)
 
@@ -268,7 +268,7 @@ Description: executes commands on another or local computer.
 Syntax: Invoke-Command [-ScriptBlock] <ScriptBlock> [-ComputerName] 
 <String[]>  
 
-Example: Invoke-Command -ScriptBlock { Get-Service } -ComputerName "Server01"
+Example: Invoke-Command -ScriptBlock { Get-Service } -ComputerName "SRV1"
 
 ![image](https://github.com/user-attachments/assets/333013de-2db4-464e-a330-d68bfc8d0b04)
 
