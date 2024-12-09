@@ -43,6 +43,7 @@ Example: New-Item -Path "C:\TestFolder" -ItemType Directory
 ![image](https://github.com/user-attachments/assets/67793eb1-ec14-4815-9034-dc5912a055d8)
 
 5. Get-EventLog
+
 Description: retrieves information from a local or distant computer's event log.
 
 Syntax: Get-EventLog [-LogName] <String> [-Newest] <Int32>  
